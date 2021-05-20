@@ -30,9 +30,54 @@ public class input_output {
         // System.out.println(a+b);
 
         // 10001. A-B
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // System.out.println(a-b);
+
+        // 10998. AxB
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // System.out.println(a*b);
+
+        // 1008. A/B
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // System.out.println((double) a/b);
+
+        // 10869. 사칙연산
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // System.out.println(a+b);
+        // System.out.println(a-b);
+        // System.out.println(a*b);
+        // System.out.println(a/b);
+        // System.out.println(a%b);
+
+        // 10430. 나머지
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // int c = sc.nextInt();
+        //
+        // System.out.println((a+b)%c);
+        // System.out.println(((a%c)+(b%c))%c);
+        // System.out.println((a*b)%c);
+        // System.out.println(((a%c) * (b%c))%c);
+
+        // 2588. 곱셈
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int b = sc.nextInt();
-        System.out.println(a-b);
+        String b = sc.next();
+
+        char [] arr = b.toCharArray();
+        for(int i = arr.length -1; i >= 0; i--){
+        int change = Integer.parseInt(String.valueOf(arr[i]));
+        System.out.println(a * change);
+        }
+        System.out.println(a * Integer.parseInt(b));
     }
 }
